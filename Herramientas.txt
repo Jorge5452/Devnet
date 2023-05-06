@@ -1,0 +1,24 @@
+Laravel
+Docker -- No pude implementarlo
+PHP
+Node
+NPM
+LiveWire
+
+
+Breeze:                                / Jetstream
+Seleccionar la opcion 0
+Modo oscuro: Si
+PHPunit: no
+Correos mailtrap.io
+
+
+
+
+
+
+----En caso de utilizar jetstream
+
+Ver videos del Login para ver si se puede hacer algo parecido
+Acomodar que pregunte si son reclutadores o no
+Agregar correos
