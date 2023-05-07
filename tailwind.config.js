@@ -6,6 +6,8 @@ module.exports = {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './resources/views/vacantes/*.blade.php',
+        './resources/views/livewire/*.blade.php',
     ],
 
     theme: {
@@ -14,9 +16,7 @@ module.exports = {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
         },
-        fontSize: {
-            '4xl': '4.5rem',
-        },
+
 
     },
 

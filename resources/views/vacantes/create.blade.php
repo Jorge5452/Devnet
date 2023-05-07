@@ -9,7 +9,11 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    Formulario
+
+                    <h1 class="text-center text-3xl font-bold  mb-10 my-5">Publicar Vacante</h1>
+                    <div class="md:flex md:justify-center">
+                        <livewire:crear-vacante />
+                    </div>
                 </div>
             </div>
         </div>

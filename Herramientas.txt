@@ -4,6 +4,14 @@ PHP
 Node
 NPM
 LiveWire
+Seeder
+Migraciones
+Subida de archivos
+Validaciones formularios
+Login
+Register
+Envio de correos
+Previsualiza imagenes
 
 
 Breeze:                                / Jetstream

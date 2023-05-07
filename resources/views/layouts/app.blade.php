@@ -12,9 +12,11 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        <link href="https://cdn.tailwindcss.com" rel="stylesheet">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @LivewireStyles
-
+        @livewireStyles
+        
+        
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -35,6 +37,6 @@
             </main>
         </div>
 
-        @LivewireScripts
+        @livewireScripts    
     </body>
 </html>
