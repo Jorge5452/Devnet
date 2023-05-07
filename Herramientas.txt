@@ -16,12 +16,20 @@ validacion de correos
 Middleware Auth
 Envio de correos
 Llaves foraneas
+Relacion uno a uno
 Relacion uno a muchos
 Responsivo
 Formulario Completado
 CRUD vacantes (Crear, Editar, Eliminar)
 Policies
+Notificaciones
+
+
+
+
+
 SWEET ALERT
+
 
 
 

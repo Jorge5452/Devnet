@@ -6,7 +6,7 @@
         @forelse($vacantes as $vacante)
         <div class="p-6 dark:text-gray-100 md:flex md:justify-between md:items-center">
             <div class="leading-10">
-                <a href="#" class="text-xl font-bold">
+                <a href=" {{ route('vacantes.show', $vacante->id) }} " class="text-xl font-bold">
                     {{ $vacante->titulo }}
                 </a>
                 <p class="text-sm text-gray-600 font-bold"> {{$vacante->empresa}} </p>
