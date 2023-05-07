@@ -7,11 +7,22 @@ LiveWire
 Seeder
 Migraciones
 Subida de archivos
+Muestra archivos /Previsualiza imagenes
+Elimina archivos
 Validaciones formularios
 Login
 Register
+validacion de correos
+Middleware Auth
 Envio de correos
-Previsualiza imagenes
+Llaves foraneas
+Relacion uno a muchos
+Responsivo
+Formulario Completado
+CRUD vacantes (Crear, Editar, Eliminar)
+Policies
+SWEET ALERT
+
 
 
 Breeze:                                / Jetstream
