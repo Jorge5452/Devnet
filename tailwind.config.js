@@ -8,6 +8,7 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/views/vacantes/*.blade.php',
         './resources/views/livewire/*.blade.php',
+        
     ],
 
     theme: {
