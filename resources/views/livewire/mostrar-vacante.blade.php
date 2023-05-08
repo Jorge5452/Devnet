@@ -49,7 +49,4 @@
             <livewire:postular-vacante :vacante="$vacante"/>
         @endcannot
     @endauth
-
-
-
 </div>
