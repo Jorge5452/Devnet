@@ -46,9 +46,15 @@
                 @endguest
             </div>
 
-            @auth
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+                @auth
+                @if(auth()->user()->rol === 2)
+                <a class="mr-2 w-7 h-7 bg-white hover:bg-white-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold" href="{{ route('notificaciones') }}">
+                    {{ Auth::user()->unreadNotifications->count() }}
+                </a>
+                @endif
+
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
@@ -78,8 +84,8 @@
                         </form>
                     </x-slot>
                 </x-dropdown>
+                @endauth
             </div>
-            @endauth
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
@@ -109,6 +115,18 @@
             </x-responsive-nav-link>
         </div>
 
+        @if(auth()->user()->rol === 2)
+        <div class="flex gap-2 items-centers p-3">
+            <a class=" w-7 h-7 bg-white hover:bg-white-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold" href="{{ route('notificaciones') }}">
+                {{ Auth::user()->unreadNotifications->count() }}
+            </a>
+            <p class="text-gray-400 font-medium font-bold">
+
+                @choice('Notificacion|Notificaciones', Auth::user()->unreadNotifications->count())
+            </p>
+        </div>
+        @endif
+
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
@@ -136,13 +154,13 @@
 
         @guest
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('login')" >
+            <x-responsive-nav-link :href="route('login')">
                 {{ __('Iniciar Sesion') }}
             </x-responsive-nav-link>
         </div>
 
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('register')" >
+            <x-responsive-nav-link :href="route('register')">
                 {{ __('Crear Cuenta') }}
             </x-responsive-nav-link>
         </div>

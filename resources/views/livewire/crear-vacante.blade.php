@@ -82,7 +82,7 @@
         
 
         <div class="my-5 w-96">
-            @if ($imagen)
+            @if($imagen)
                 <img src="{{ $imagen->temporaryUrl() }}" alt="Imagen Vacante">
             @endif
         </div>

@@ -20,14 +20,9 @@ Relacion uno a uno
 Relacion uno a muchos
 Responsivo
 Formulario Completado
-CRUD vacantes (Crear, Editar, Eliminar)
+CRUD vacantes (Crear, Editar, Eliminar, Mostrar)
 Policies
 Notificaciones
-
-
-
-
-
 SWEET ALERT
 
 
