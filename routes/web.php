@@ -6,6 +6,7 @@ use App\Http\Controllers\NotificacionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VacanteController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,12 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/notificaciones', NotificacionController::class)->middleware(['auth', 'verified', 'rol.reclutador'])->name('notificaciones');
+
+
+
+//Google Authentication Routes
+Route::get('auth/google', [SocialController::class, 'googleRedirect'])->name('login.google');
+Route::get('auth/google/callback', [SocialController::class, 'googleCallback']);
 
 
 require __DIR__.'/auth.php';
