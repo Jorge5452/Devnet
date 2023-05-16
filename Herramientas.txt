@@ -23,12 +23,13 @@ Formulario Completado
 CRUD vacantes (Crear, Editar, Eliminar, Mostrar)
 Policies
 Notificaciones
+Google Login
 SWEET ALERT
 
 
 
 
-Breeze:                                / Jetstream
+Breeze:                               
 Seleccionar la opcion 0
 Modo oscuro: Si
 PHPunit: no
@@ -37,10 +38,3 @@ Correos mailtrap.io
 
 
 
-
-
-----En caso de utilizar jetstream
-
-Ver videos del Login para ver si se puede hacer algo parecido
-Acomodar que pregunte si son reclutadores o no
-Agregar correos
