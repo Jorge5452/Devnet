@@ -22,7 +22,7 @@ class VacantePolicy
      */
     public function view(User $user, Vacante $vacante): bool
     {
-        //
+        return $user->id === $vacante->user_id;
     }
 
     /**
